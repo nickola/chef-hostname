@@ -66,7 +66,7 @@ if fqdn
   end
 
   if node[:set_fqdn_reload_method] == "restart"
-      ruby_block "Chef restart" do
+      ruby_block "restart Chef" do
         block do
           if fork
             # I am the parent
