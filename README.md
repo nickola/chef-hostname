@@ -6,9 +6,11 @@ Sets hostname and FQDN of the node.
 Attributes
 ==========
 
-Expects `node['set_fqdn']` to be an string containing the node FQDN.
+See `attributes/default.rb` for default values.
 
-Also, Chef reload method after hostname/FQDN update can be specified at `node['set_fqdn_reload_method']`:
+Expects `node[:set_fqdn]` to be an string containing the node FQDN.
+
+Also, Chef reload method after hostname/FQDN update can be specified at `node[:set_fqdn_reload_method]`:
 
   - `restart` - Restart Chef (by default)
 
