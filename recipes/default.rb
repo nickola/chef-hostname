@@ -60,7 +60,7 @@ if fqdn
         end
         hosts.write_file
       end
-      only_if { File.read("/etc/hosts").grep(/^#{hosts_line_re}/).empty? }
+      only_if { File.read("/etc/hosts").split("\n").grep(/^#{hosts_line_re}/).empty? }
     end
     changed = true
   end
