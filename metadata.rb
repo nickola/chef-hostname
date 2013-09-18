@@ -1,3 +1,4 @@
+name              "hostname"
 maintainer        "Nickolay Kovalev"
 maintainer_email  "nickola@nickola.ru"
 license           "MIT"
